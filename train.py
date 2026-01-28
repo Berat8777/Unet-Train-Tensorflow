@@ -99,8 +99,7 @@ def UNET (input_shape=(512,512,3),last_activation='sigmoid'):
           
 model = UNET(input_shape=(512,512,3),last_activation="sigmoid")
 
-
-# Modeli eğit                    
+                   
 model.fit(train_images, mask_images, batch_size=4, epochs=50, validation_split=0.2)
 
 model.save("/home/berat1/Desktop/h5ler/deneme1.h5")
